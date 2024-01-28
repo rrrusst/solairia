@@ -9,6 +9,7 @@
 5) It's main code has been packaged into a single '.exe' using PyInstaller, and the necessary folder structure and files have been zipped into a neat .zip file for ease of installation and use.<br>
 ---NOTE: **The '.exe' may be flagged as malicious by some anti-malware scanners. This is a false positive**. The detection is because malicious actors use PyInstaller (and similar programs) to package their malware, and when these packaged malware are detected by anti-malware scanners, the file behaviour and characteristics are recorded into their database. Because single '.exe' files created using PyInstaller share similar characteristics, even innocent programs are falsely flagged by some anti-malware scanners.
 6) Currently only supports Windows.
+7) **This repository does not contain the Python source code. Only released versions and the VirusTotal file analysis results are uploaded in "Releases".**
 
 ### HOW TO USE:
 1) Download the .zip file and extract the contents to your desired folder (**as always, perform anti-malware scans on files you obtain from the Internet, even from GitHub!**)
