@@ -1,11 +1,11 @@
 **SOLAIRIA (Software for Offline Loading of AI by Russ for Interaction and Assistance)** is a program built on top of the 'llama-cpp-python' package and works completely offline. It loads the '.gguf' LLM model that you place in its \model\ folder to let you perform text-based interaction with the AI model.
 
--Only '.gguf' model format is supported.
--It has been preset to use Llama2's prompt format (https://huggingface.co/blog/llama2#how-to-prompt-llama-2) and tested with TheBloke's Llama-2-7B-Chat-GGUF model (https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF).
--Your results may vary when using other '.gguf' models. Non-Llama '.gguf' models may give strange replies as they were tuned using a different prompt format.
--It's main code has been packaged into a single '.exe' using PyInstaller, and the necessary folder structure and files have been zipped into a neat .zip file for ease of installation and use.
----NOTE: The '.exe' may be flagged as malicious by some anti-malware scanners. **This is a false positive**. The detection is because malicious actors use PyInstaller (and similar programs) to package their malware, and when these packaged malware are detected by anti-malware scanners, the file behaviour and characteristics are recorded into their database. Because single '.exe' files created using PyInstaller share similar characteristics, even innocent programs are falsely flagged by some anti-malware scanners.
--Currently only supports Windows.
+\n-Only '.gguf' model format is supported.
+\n-It has been preset to use Llama2's prompt format (https://huggingface.co/blog/llama2#how-to-prompt-llama-2) and tested with TheBloke's Llama-2-7B-Chat-GGUF model (https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF).
+\n-Your results may vary when using other '.gguf' models. Non-Llama '.gguf' models may give strange replies as they were tuned using a different prompt format.
+\n-It's main code has been packaged into a single '.exe' using PyInstaller, and the necessary folder structure and files have been zipped into a neat .zip file for ease of installation and use.
+\n---NOTE: The '.exe' may be flagged as malicious by some anti-malware scanners. **This is a false positive**. The detection is because malicious actors use PyInstaller (and similar programs) to package their malware, and when these packaged malware are detected by anti-malware scanners, the file behaviour and characteristics are recorded into their database. Because single '.exe' files created using PyInstaller share similar characteristics, even innocent programs are falsely flagged by some anti-malware scanners.
+\n-Currently only supports Windows.
 
 
 HOW TO USE:
