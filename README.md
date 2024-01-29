@@ -30,6 +30,7 @@
 1) You cannot use non-text-generation type of LLM models as the program does not handle those right now.
 2) You cannot save and load your chat session in the program. Once you close it, your conversation is gone. Re-launching will start from a blank slate again.
 3) It cannot access the Internet to get info. All info it provides is based on the LLM loaded and the date it was trained (e.g. Llama 2 has a knowledge cutoff date of Dec 2022. It will not be able to give info on anything after Dec 2022).
+4) You cannot input multi-lines of text and have it processed as a whole due to Windows Command Prompt limitation (each line will be treated as a separate input by you. i.e. SOLAIRIA will process and reply your first line, then the 2nd, then 3rd etc... instead of processing and replying it as a whole). 
 
 ### SOLAIRIA uses the following packages (including their dependencies, which are not listed here):
 1) [llama-cpp-python - Python bindings for llama.cpp](https://github.com/abetlen/llama-cpp-python) - For use of llama.cpp in Python to run LLMs
