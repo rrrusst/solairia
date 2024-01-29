@@ -36,3 +36,11 @@
 2) [Colorama](https://github.com/tartley/colorama) - For coloured text in Windows Command Prompt
 3) [SentencePiece](https://github.com/google/sentencepiece) - For conversion of text to tokens to estimate token count
 4) [PyInstaller](https://github.com/pyinstaller/pyinstaller) - For packaging of SOLAIRIA's Python code and dependencies into a single executable file
+
+### TEST RIG SPECS:
+CPU-bound version:
+1) OS: Windows 10 Pro (version 22H2)
+2) Motherboard: Gigabyte Z390 Gaming X
+3) CPU: Intel i5-9600K (6 cores @ 4.9GHz)
+4) RAM: 16GB
+5) GPU (not used for processing in CPU-bound version): NVIDIA RTX 3070 (8GB VRAM)
