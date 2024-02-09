@@ -40,7 +40,6 @@
 4) [PyInstaller](https://github.com/pyinstaller/pyinstaller) - For packaging of SOLAIRIA's Python code and dependencies into a single executable file
 
 ### TEST RIG SPECS:
-CPU-bound version:
 1) OS: Windows 10 Pro (version 22H2)
 2) Motherboard: Gigabyte Z390 Gaming X
 3) CPU: Intel i5-9600K (6 cores @ 4.9GHz)
