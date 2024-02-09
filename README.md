@@ -12,10 +12,11 @@
 7) **This repository does not contain the Python source code. Only released versions and the [VirusTotal](https://www.virustotal.com) file analysis PDF are uploaded in "Releases".**
 
 ### HOW TO USE:
-1) Download the .zip file and extract the contents to your desired folder
-2) Get a text-generation type of '.gguf' LLM model from [https://huggingface.co/models?pipeline_tag=text-generation&sort=trending&search=gguf](https://huggingface.co/models?pipeline_tag=text-generation&sort=trending&search=gguf).
-3) Place the '.gguf' model into the program's \model\ folder
-4) Run the .exe file
+1) Download the CPU or GPU-bound version's .zip file (from "Releases" at right side of this page) and extract the contents to your desired folder
+2) (For GPU-bound version only) Download and install NVIDIA CUDA Toolkit from [https://developer.nvidia.com/cuda-downloads](https://developer.nvidia.com/cuda-downloads). You only need to install the CUDA-related components.
+3) Get a text-generation type of '.gguf' LLM model from [https://huggingface.co/models?pipeline_tag=text-generation&sort=trending&search=gguf](https://huggingface.co/models?pipeline_tag=text-generation&sort=trending&search=gguf).
+4) Place the '.gguf' model into the program's \model\ folder
+5) Run the .exe file
 ---You may need to unblock the file via right-click -> properties -> properties, as it is an '.exe' that does not originate from your computer.
 ---Your anti-malware software might detect it as malicious. This is a false positive, as stated in the note in GENERAL INFO #5 above. The file analysis PDF by [VirusTotal](https://www.virustotal.com) is uploaded in each Release for your reference and peace of mind.
 
