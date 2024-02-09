@@ -13,7 +13,7 @@
 
 ### HOW TO USE:
 1) Download the .zip file and extract the contents to your desired folder
-2) Get a text-generation type of '.gguf' LLM model from [HuggingFace](https://huggingface.co/models?pipeline_tag=text-generation&sort=trending&search=gguf)
+2) Get a text-generation type of '.gguf' LLM model from [https://huggingface.co/models?pipeline_tag=text-generation&sort=trending&search=gguf](https://huggingface.co/models?pipeline_tag=text-generation&sort=trending&search=gguf).
 3) Place the '.gguf' model into the program's \model\ folder
 4) Run the .exe file
 ---You may need to unblock the file via right-click -> properties -> properties, as it is an '.exe' that does not originate from your computer.
