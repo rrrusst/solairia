@@ -6,8 +6,8 @@
 2) Only '.gguf' model format is supported.
 3) It has been preset to use Llama2's prompt format (https://huggingface.co/blog/llama2#how-to-prompt-llama-2) and tested with TheBloke's Llama-2-7B-Chat-GGUF model (https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF).
 4) Your results may vary when using other '.gguf' models. Non-Llama '.gguf' models may give strange replies as they were tuned using a different prompt format.
-5) It's main code has been packaged into a single '.exe' using PyInstaller, and the necessary folder structure and files have been zipped into a neat .zip file for ease of installation and use.<br>
----NOTE: **The '.exe' may be flagged as malicious by some anti-malware scanners. This is a false positive**. The detection is because malicious actors use PyInstaller (and similar programs) to package their malware, and when these packaged malware are detected by anti-malware scanners, the file behaviour and characteristics are recorded into their database. Because single '.exe' files created using PyInstaller share similar characteristics, even innocent programs are falsely flagged by some anti-malware scanners.
+5) SOLAIRIA is packaged into an '.exe' with supporting folders and files using PyInstaller, which are then zipped into a neat .zip file for ease of installation and use.<br>
+---NOTE: **The '.exe' may be flagged as malicious by some anti-malware scanners. This is a false positive**. The detection is because malicious actors use PyInstaller (and similar programs) to package their malware, and when these packaged malware are detected by anti-malware scanners, the file behaviour and characteristics are recorded into their database. Because '.exe' files created using PyInstaller share similar characteristics, even innocent programs are falsely flagged by some anti-malware scanners.
 6) Currently only supports Windows.
 7) **This repository does not contain the Python source code. Only released versions and the [VirusTotal](https://www.virustotal.com) file analysis PDF are uploaded in "Releases".**
 
