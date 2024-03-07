@@ -21,17 +21,18 @@
 ---Your anti-malware software might detect it as malicious. This is a false positive, as stated in the note in GENERAL INFO #5 above. The file analysis PDF by [VirusTotal](https://www.virustotal.com) is uploaded in each Release for your reference and peace of mind.
 
 ### WHAT YOU CAN DO WITH SOLAIRIA:
-1) You can use it **completely offline** after downloading the .zip and obtaining your desired '.gguf' LLM model. No need to worry about your Q & A and conversations in the program leaking.
+1) You can use it **completely offline** after downloading the .zip and obtaining your desired '.gguf' LLM model. No need to worry about your conversations in the program being eavesdropped on.
 2) You can set its context size after starting up the program (1024, 2048-default or 4096). This governs how much context memory SOLAIRIA has to remember your conversation, and also affects your input length limit. Larger size = More chat history for it to refer to before replying = Slower replies as more tokens need to be processed.
 3) You can give it a personality so that it responds in the style of that personality.
 4) You can use it as your personal Q & A bot, a source of ideas and inspiration, a storyteller, a speechwriter, a temporary virtual confidante etc.
-5) To remove SOLAIRIA from your computer, just delete the folders and files that you extracted initially from the .zip file. That's it.
+5) You can use it to analyse text files (.csv, .log and .txt) and get insights on their contents.
+6) You can easily remove SOLAIRIA from your computer by deleting the folders and files that you initially extracted from the .zip file (yup, that easy).
 
 ### WHAT YOU CANNOT DO WITH SOLARIA:
 1) You cannot use non-text-generation type of LLM models as the program does not handle those right now.
 2) You cannot save and load your chat session in the program. Once you close it, your conversation is gone. Re-launching will start from a blank slate again.
 3) It cannot access the Internet to get info. All info it provides is based on the LLM loaded and the date it was trained (e.g. Llama 2 has a knowledge cutoff date of Dec 2022. It will not be able to give info on anything after Dec 2022).
-4) You cannot input multi-lines of text and have it processed as a whole due to Windows Command Prompt limitation (each line will be treated as a separate input by you. i.e. SOLAIRIA will process and reply your first line, then the 2nd, then 3rd etc... instead of processing and replying it as a whole). 
+4) You cannot input multi-lines of text and have it processed as a whole due to Windows Command Prompt limitation (each line will be treated as a separate input by you. i.e. SOLAIRIA will process and reply your first line, then the 2nd, then 3rd etc... instead of processing and replying it as a whole). WORKAROUND: Save the multi-line text in a .txt file and ask SOLAIRIA to analyse it.
 
 ### SOLAIRIA uses the following packages (including their dependencies, which are not listed here):
 1) [llama-cpp-python - Python bindings for llama.cpp](https://github.com/abetlen/llama-cpp-python) - For use of llama.cpp in Python to run LLMs
