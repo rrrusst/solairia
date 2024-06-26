@@ -1,6 +1,6 @@
 # SOLAIRIA (Software for Offline Loading of AI by Russ for Interaction and Assistance)
 ## A program built on top of the 'llama-cpp-python' package and works completely offline.
-### Update 17 Jun 2024: Version 2.0.0 is on the way, with a full-fledged GUI, some interface customisation options, user experience improvements, performance optimisations and bug fixes.
+### Update 26 Jun 2024: Version 2.0.0 has been released! Enjoy a full-fledged GUI, some interface customisation options, user experience improvements, performance optimisations and bug fixes. This Readme will be updated soon.
 
 ### GENERAL INFO:
 1) It loads the '.gguf' LLM model that you place in its \model\ folder to let you perform text-based interaction with the AI model.
