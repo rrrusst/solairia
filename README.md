@@ -3,14 +3,15 @@
 ### Update 26 Jun 2024: Version 2.0.0 has been released! Enjoy a full-fledged GUI, some interface customisation options, user experience improvements, performance optimisations and bug fixes. This Readme will be updated soon.
 
 ### GENERAL INFO:
-1) It loads the '.gguf' LLM model that you place in its \model\ folder to let you perform text-based interaction with the AI model.
-2) Only '.gguf' model format is supported.
-3) It has been preset to use Llama2's prompt format (https://huggingface.co/blog/llama2#how-to-prompt-llama-2) and tested with TheBloke's Llama-2-7B-Chat-GGUF model (https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF).
-4) Your results may vary when using other '.gguf' models. Non-Llama '.gguf' models may give strange replies as they were tuned using a different prompt format.
-5) SOLAIRIA is packaged into an '.exe' with supporting folders and files using PyInstaller, which are then zipped into a neat .zip file for ease of installation and use.<br>
+1) SOLAIRIA is an offline, private and customisable alternative to ChatGPT (and other similar online-only products) that supports text interactions.
+2) It lets you load an LLM of your choice (in .gguf format only), set the LLM context size and personality, and interact with it, all without needing any internet connection. You will need to download a text-generation type of LLM from the HuggingFace website before loading it into SOLAIRIA.
+3) It has been preset Llama2 (https://huggingface.co/blog/llama2#how-to-prompt-llama-2) and Mistral prompt templates, and it auto-selects the template based on the LLM detected.
+4) An LLM you can start off with is TheBloke's Llama-2-7B-Chat-GGUF model (https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF).
+5) If SOLAIRIA produces weird replies with a specific LLM, it is likely because the LLM requires a different prompt template from the preset ones. You can use the Custom Prompt Template option to resolve this.
+6) SOLAIRIA is packaged into an '.exe' with supporting folders and files using PyInstaller, which are then zipped into a neat .zip file for ease of installation and use.<br>
 ---NOTE: **The '.exe' may be flagged as malicious by some anti-malware scanners. This is a false positive**. The detection is because malicious actors use PyInstaller (and similar programs) to package their malware, and when these packaged malware are detected by anti-malware scanners, the file behaviour and characteristics are recorded into their database. Because '.exe' files created using PyInstaller share similar characteristics, even innocent programs are falsely flagged by some anti-malware scanners.
-6) Currently only supports Windows.
-7) **This repository does not contain the Python source code. Only released versions and the [VirusTotal](https://www.virustotal.com) file analysis PDF are uploaded in "Releases".**
+7) Currently only supports Windows.
+8) **This repository does not contain the Python source code. Only released versions and the [VirusTotal](https://www.virustotal.com) file analysis PDF are uploaded in "Releases".**
 
 ### HOW TO USE:
 1) Download the CPU or GPU-bound version's .zip file (from "Releases" at right side of this page) and extract the contents to your desired folder
