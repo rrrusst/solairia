@@ -1,5 +1,8 @@
 # SOLAIRIA (Software for Offline Loading of AI by Russ for Interaction and Assistance)
 ## Load and interact with text-generation LLMs easily and privately using your computer's own hardware. Built with 'llama-cpp-python'.
+
+#### Known Issues:
+  - 11 Nov 2024: Glitchy prompt templates leading to weird outputs. Working on revising code to use llama-cpp-python's built-in chat template selection.
 #### Updates:
   - 26 Jun 2024: Version 2.0.0 has been released! Enjoy a full-fledged GUI, some interface customisation options, user experience improvements, performance optimisations and bug fixes.
   - 22 Jul 2024: Readme has been updated for Version 2.0.0.
