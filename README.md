@@ -2,8 +2,9 @@
 ## Load and interact with text-generation LLMs easily and privately using your computer's own hardware. Built with 'llama-cpp-python'.
 
 #### Known Issues:
-  - 11 Nov 2024: Glitchy prompt templates leading to weird outputs. Working on revising code to use llama-cpp-python's built-in chat template selection.
-#### Updates:
+  - Nil
+#### Updates (latest 3):
+  - 11 Nov 2024: Version 2.0.1 has been released! Compatibility with different text-generation LLMs (.gguf format) has been improved with the reworked custom prompt template feature (now uses llama-cpp-python's preset prompt templates and auto-selection, with the option to manually select from a list of preset templates).
   - 26 Jun 2024: Version 2.0.0 has been released! Enjoy a full-fledged GUI, some interface customisation options, user experience improvements, performance optimisations and bug fixes.
   - 22 Jul 2024: Readme has been updated for Version 2.0.0.
 
@@ -19,9 +20,9 @@
 ![image](https://github.com/user-attachments/assets/cea7d16b-ce1f-489d-9d7a-51e2a28df920)
 
 ### GENERAL INFO:
-1) SOLAIRIA has been preset with [Llama2](https://huggingface.co/blog/llama2#how-to-prompt-llama-2) and Mistral prompt templates, which will be auto-selected based on the LLM detected.
+1) As of v2.0.1, SOLAIRIA auto-selects the correct prompt template from a list of presets to use with your LLM based on the LLM's metadata.
 2) An LLM you can start off with is [TheBloke's Llama-2-7B-Chat-GGUF model](https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF).
-3) If SOLAIRIA produces weird replies with a specific LLM, it is likely that the LLM requires a different prompt template from the preset ones. You can use the Custom Prompt Template option to resolve this.
+3) If SOLAIRIA produces weird replies with a specific LLM, it is possible that the LLM's metadata (or lack of) does not contain enough info for SOLAIRIA to auto-select the correct template. In that case, just manually select from a list of preset prompt templates based on the LLM's model card on HuggingFace (e.g. 'alpaca', 'llama-2' etc.).
 4) SOLAIRIA is packaged into an '.exe' with supporting folders and files using [PyInstaller](https://github.com/pyinstaller/pyinstaller), which are then compressed into .zip file for ease of installation and use.
     1) **The '.exe' may be flagged as malicious by some anti-malware scanners. This is a false positive**. The detection is because apart from legitimate developers, PyInstaller (and similar programs) is also used by malicious actors to package and hide their malware, and when these packaged malware are detected by anti-malware scanners, the file behaviour and characteristics are recorded into their database. Since '.exe' files created using PyInstaller share similar characteristics, even innocent programs can be falsely flagged by some anti-malware scanners.
     2) Each realease of SOLAIRIA is accompanied with a scan report from [VirusTotal](https://www.virustotal.com/) for transparency and peace of mind.
@@ -45,7 +46,7 @@
 2) You can use it to introduce beginners to the world of text-generation LLMs, or to refine your prompt engineering skills on different LLMs.
 3) You can give it a personality so that it responds in the style of that personality, or give it rules to govern its responses.
 4) You can use it as your personal and private Q & A companion, a source of ideas and inspiration, a storyteller, a speechwriter, a temporary virtual confidante and more.
-5) You can export/import config settings, which can be used as config 'profiles' for different LLMs (e.g. easily applying a specific custom prompt template for a specific LLM)
+5) You can export/import config settings, which can be used as config 'profiles' for different LLMs (e.g. set a specific personality and context size for a specific LLM)
 6) You can export your chat log in '.txt' format from SOLAIRIA's menu via File > Export chat log.
 7) You can use it to analyse text files (.csv, .log and .txt) and get insights on their contents.
     1) Best used with GPU-bound version for much faster analysis time.
@@ -64,9 +65,9 @@
 
 ### TEST RIG SPECS:
 1) OS: Windows 10 Pro (version 22H2)
-2) Motherboard: Gigabyte Z390 Gaming X
-3) CPU: Intel i5-9600K (6 cores @ 4.9GHz)
+2) Motherboard: ASUS Z790-F
+3) CPU: Intel i5-14600K (6 P-cores @ 3.5GHz)
     1) Only used for processing in CPU-bound version
-4) RAM: 16GB DDR4
+4) RAM: 32GB DDR5
 5) GPU: NVIDIA RTX 3070 (8GB VRAM)
     1) Only used for processing in GPU-bound version
