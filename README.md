@@ -4,9 +4,9 @@
 #### Known Issues:
   - Nil
 #### Updates (latest 3):
-  - 6 Nov 2024: Version 2.0.2 has been released. Enabled CTRL+A and CTRL+C key combination in main chat window.
   - 5 Nov 2024: Version 2.0.1 has been released! Compatibility with different text-generation LLMs (.gguf format) has been improved with the reworked custom prompt template feature (now uses llama-cpp-python's preset prompt templates and auto-selection, with the option to manually select from a list of preset templates).
   - 26 Jun 2024: Version 2.0.0 has been released! Enjoy a full-fledged GUI, some interface customisation options, user experience improvements, performance optimisations and bug fixes.
+  - 22 Jul 2024: Readme has been updated for Version 2.0.0.
 
 ### OVERVIEW:
 1) SOLAIRIA is an **offline, private and customisable** alternative to ChatGPT (and other similar products) that supports text interactions and **runs 100% on your computer's own hardware**.
