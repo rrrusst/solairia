@@ -2,7 +2,7 @@
 ## Load and interact with text-generation LLMs easily and privately using your computer's own hardware. Built with 'llama-cpp-python'.
 
 #### Known Issues:
-  - 6 Nov 2024: Ctrl+A (select all) and Ctrl+C (copy) key combination temporarily disabled in main chat window. Working to re-enable it in the next update. CPU-bound version hangs sometimes if user prompts rapidly during LLM's replies.
+  - 6 Nov 2024: Ctrl+A (select all) and Ctrl+C (copy) key combination temporarily disabled in main chat window. Working to re-enable it in the next update. SOLAIRIA hangs sometimes if user prompts rapidly multiple times while SOLAIRIA/LLM is replying.
 
 #### Updates (latest 3):
   - 5 Nov 2024: Version 2.0.1 has been released! Compatibility with different text-generation LLMs (.gguf format) has been improved with the reworked custom prompt template feature (now uses llama-cpp-python's preset prompt templates and auto-selection, with the option to manually select from a list of preset templates).
