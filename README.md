@@ -2,12 +2,12 @@
 ## Load and interact with text-generation LLMs easily and privately using your computer's own hardware. Built with 'llama-cpp-python'.
 
 #### Known Issues:
-  - 6 Nov 2024: Ctrl+A (select all) and Ctrl+C (copy) key combination temporarily disabled in main chat window. Working to re-enable it in the next update. SOLAIRIA hangs sometimes if user prompts rapidly multiple times while SOLAIRIA/LLM is replying.
+  - 6 Nov 2024: <s>Ctrl+A (select all) and Ctrl+C (copy) key combination temporarily disabled in main chat window. Working to re-enable it in the next update.</s> SOLAIRIA hangs sometimes if user prompts rapidly multiple times while SOLAIRIA/LLM is replying.
 
 #### Updates (latest 3):
+  - 7 Nov 2024: Version 2.0.2 has been released. Re-enabled CTRL+A (select all) and CTRL+C (copy) key combinations.
   - 5 Nov 2024: Version 2.0.1 has been released! Compatibility with different text-generation LLMs (.gguf format) has been improved with the reworked custom prompt template feature (now uses llama-cpp-python's preset prompt templates and auto-selection, with the option to manually select from a list of preset templates).
   - 26 Jun 2024: Version 2.0.0 has been released! Enjoy a full-fledged GUI, some interface customisation options, user experience improvements, performance optimisations and bug fixes.
-  - 22 Jul 2024: Readme has been updated for Version 2.0.0.
 
 ### OVERVIEW:
 1) SOLAIRIA is an **offline, private and customisable** alternative to ChatGPT (and other similar products) that supports text interactions and **runs 100% on your computer's own hardware**.
