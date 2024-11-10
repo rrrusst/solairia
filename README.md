@@ -5,17 +5,17 @@
   - 6 Nov 2024: <s>Ctrl+A (select all) and Ctrl+C (copy) key combination temporarily disabled in main chat window. Working to re-enable it in the next update.</s> SOLAIRIA hangs sometimes if user prompts rapidly multiple times while SOLAIRIA/LLM is replying.
 
 #### Updates (latest 3):
+  - 10 Nov 2024: Linux version has been released! Built on a Raspberry Pi 5 8GB (OS: 64-bit Debian 12 (Bookworm)) and tested with [Microsoft's Phi-3-Mini-4K-Instruct GGUF](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf). Performance with aforementioned LLM was bearable on a non-overclocked Pi 5, and never thermal throttled with a heatsink+fan (Argon One V3 case). On a full-fledged Linux computer, performance would definitely be better.
   - 7 Nov 2024: Version 2.0.2 has been released. Re-enabled CTRL+A (select all) and CTRL+C (copy) key combinations.
   - 5 Nov 2024: Version 2.0.1 has been released! Compatibility with different text-generation LLMs (.gguf format) has been improved with the reworked custom prompt template feature (now uses llama-cpp-python's preset prompt templates and auto-selection, with the option to manually select from a list of preset templates).
-  - 26 Jun 2024: Version 2.0.0 has been released! Enjoy a full-fledged GUI, some interface customisation options, user experience improvements, performance optimisations and bug fixes.
 
 ### OVERVIEW:
 1) SOLAIRIA is an **offline, private and customisable** alternative to ChatGPT (and other similar products) that supports text interactions and **runs 100% on your computer's own hardware**.
 2) It lets you load a text-generation LLM of your choice (in .gguf format only) and interact with it, all without needing any internet connection. You will need to download a text-generation type of LLM from the HuggingFace website before loading it into SOLAIRIA.
-3) Currently only supports Windows OS.
+3) Currently supports Windows and Linux (Linux as of 10 Nov 2024, v2.0.2 onwards).
 4) Available in two variants:
-    1) GPU-bound: Uses your computer's NVIDIA GPU for LLM inference/processing. Performs >10-20x faster than CPU-bound version. Requires CUDA components from [NVIDIA CUDA Toolkit](https://developer.nvidia.com/cuda-downloads) to be installed before use and supports NVIDIA GPUs released in 2006 or later/newer.
-    2) CPU-bound: Uses your computer's CPU for LLM inference/processing. Performs slower than GPU-bound version. Does not require any additional components to be installed and widely compatible with Windows systems.
+    1) GPU-bound (Windows only): Uses your computer's NVIDIA GPU for LLM inference/processing. Performs >10-20x faster than CPU-bound version. Requires CUDA components from [NVIDIA CUDA Toolkit](https://developer.nvidia.com/cuda-downloads) to be installed before use and supports NVIDIA GPUs released in 2006 or later/newer.
+    2) CPU-bound (Windows and Linux): Uses your computer's CPU for LLM inference/processing. Performs slower than GPU-bound version. Does not require any additional components to be installed and widely compatible with Windows and Linux (as of 10 Nov 2024, v2.0.2 onwards) systems.
 5) **This repository does not contain the Python source code. Only released versions and the [VirusTotal](https://www.virustotal.com) file analysis PDF are uploaded in [Releases](https://github.com/rrrusst/solairia/releases).**
    
 ![image](https://github.com/user-attachments/assets/cea7d16b-ce1f-489d-9d7a-51e2a28df920)
@@ -65,6 +65,7 @@
 3) [PyInstaller](https://github.com/pyinstaller/pyinstaller) - For packaging of SOLAIRIA's Python code and dependencies into a single executable file.
 
 ### TEST RIG SPECS:
+Windows:
 1) OS: Windows 10 Pro (version 22H2)
 2) Motherboard: ASUS Z790-F
 3) CPU: Intel i5-14600K (6 P-cores @ 3.5GHz)
@@ -72,3 +73,11 @@
 4) RAM: 32GB DDR5
 5) GPU: NVIDIA RTX 3070 (8GB VRAM)
     1) Only used for processing in GPU-bound version
+
+Linux:
+1) OS: 64-bit Debian 12 (Bookworm)
+2) System: Raspberry Pi 5
+3) CPU: Broadcom BCM2712 (4 cores @ 2.4GHz)
+4) RAM: 8GB LPDDR4X
+5) GPU: VideoCore VII
+  1) Not used for testing, as only CPU-bound Linux version of SOLAIRIA is released.
