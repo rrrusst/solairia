@@ -5,7 +5,7 @@
   - 6 Nov 2024: <s>Ctrl+A (select all) and Ctrl+C (copy) key combination temporarily disabled in main chat window. Working to re-enable it in the next update.</s> SOLAIRIA hangs sometimes if user prompts rapidly multiple times while SOLAIRIA/LLM is replying.
 
 #### Updates (latest 3):
-  - 10 Nov 2024: Linux version has been released! Built on a Raspberry Pi 5 8GB (OS: 64-bit Debian 12 (Bookworm)) and tested with [Microsoft's Phi-3-Mini-4K-Instruct GGUF](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf). Performance with aforementioned LLM was bearable on a non-overclocked Pi 5, and never thermal throttled with a heatsink+fan (Argon One V3 case). On a full-fledged Linux computer, performance would definitely be better.
+  - 10 Nov 2024: Linux version has been released! Built on a Raspberry Pi 5 (specs at bottom of page) and tested with [Microsoft's Phi-3-Mini-4K-Instruct GGUF](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf). Performance with aforementioned LLM was bearable on a non-overclocked RPi 5, and never thermal throttled with a heatsink+fan (Argon One V3 case). On a full-fledged Linux computer, performance would definitely be better.
   - 7 Nov 2024: Version 2.0.2 has been released. Re-enabled CTRL+A (select all) and CTRL+C (copy) key combinations.
   - 5 Nov 2024: Version 2.0.1 has been released! Compatibility with different text-generation LLMs (.gguf format) has been improved with the reworked custom prompt template feature (now uses llama-cpp-python's preset prompt templates and auto-selection, with the option to manually select from a list of preset templates).
 
