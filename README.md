@@ -2,7 +2,8 @@
 ## Load and interact with text-generation LLMs easily and privately using your computer's own hardware. Built with 'llama-cpp-python'.
 
 #### Known Issues:
-  - 10 Nov 2024: For Linux version, when using the option to launch without Terminal, enabling "Show LLM stats" option in Config menu does nothing. Workaround: Use option to launch/execute with Terminal.
+  - 22 Nov 2024: When "Show LLM Performance" is enabled, the "prompt eval time" and "eval time" parameters always show 0.00ms instead of the respective timings. This is a bug with llama-cpp-python v0.3.1 (which SOLAIRIA currently uses), and pending their bug fix.
+  - 10 Nov 2024: For Linux version, when using the option to launch without Terminal, enabling "Show LLM Performance" option in Config menu does nothing. Workaround: Use option to launch/execute with Terminal.
   - 6 Nov 2024: <s>Ctrl+A (select all) and Ctrl+C (copy) key combination temporarily disabled in main chat window. Working to re-enable it in the next update.</s> SOLAIRIA hangs sometimes if user prompts rapidly multiple times while SOLAIRIA/LLM is replying.
 
 #### Updates (latest 3):
