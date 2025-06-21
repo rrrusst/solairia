@@ -1,0 +1,13 @@
+altgraph==0.17.4
+diskcache==5.6.3
+Jinja2==3.1.6
+llama_cpp_python==0.3.9
+MarkupSafe==3.0.2
+numpy==2.2.6
+packaging==23.2
+pefile==2023.2.7
+pyinstaller==6.3.0
+pyinstaller-hooks-contrib==2023.12
+pywin32-ctypes==0.2.2
+sentencepiece==0.1.99
+typing_extensions==4.14.0
